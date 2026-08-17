@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app" class="hidden">
+    <div class="header">
+        <div class="left">
+            <div class="avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStZAorltqqq36zoMM53mPQVyx8yHAQ9aTY9FUVueSmss5T8x8YOR95g1jb&s=10"></div>
+            <h1 class="title">Garage</h1>
+        </div>
+
+        <div class="close" onclick="closeGarage()">✕</div>
+    </div>
+
+    <div class="container" id="vehicleContainer"></div>
+
+    <div id="renameModal" class="modal hidden">
+        <div class="modal-box">
+            <h2>Ændre navn</h2>
+
+            <input
+                type="text"
+                id="renameInput"
+                placeholder="Indtast nyt navn..."
+                maxlength="30"
+            >
+
+            <div class="modal-buttons">
+                <button id="cancelRename" class="modal-btn cancel">
+                    Annuller
+                </button>
+
+                <button id="saveRename" class="modal-btn save">
+                    Gem
+                </button>
+            </div>
+        </div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
